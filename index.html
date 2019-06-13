@@ -9,6 +9,8 @@
     <img src="https://static.vinepair.com/wp-content/uploads/2017/10/cal-internal.jpg" alt="Wineglasses">
     <img src="https://static.vinepair.com/wp-content/uploads/2017/10/cal-internal.jpg" alt="Wineglasses" />
     <h1>Help me choose between..</h1>
+    <h1 class="helpMe">Help me choose between..</h1>
+      <h2 class="theWinner">The winner is:</h2>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Something"></input>
@@ -23,6 +25,7 @@
     <script>
     $(function() {
       $('.resultSection').hide()
+      $('.theWinner').hide()
 
       var add_option = function() {
         $('.inputs').append('<input></input>')
@@ -34,6 +37,8 @@
       var submit = function() {
         $('.inputSection').hide()
         $('.resultSection').css('display', 'flex')
+        $('.helpMe').hide()
+        $('.theWinner').css('display', 'flex')
         $('input').each(function() {
           options.push($(this).val())
         })
