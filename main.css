@@ -6,6 +6,11 @@ body {
   background-color: #ffd5be;
 }
 
+.headerImage {
+    width: 100%;
+    z-index: 0;
+}
+
 h1 {
   font-weight: lighter;
   font-size: 40px;
